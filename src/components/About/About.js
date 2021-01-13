@@ -18,10 +18,11 @@ export default class About extends Component {
             <h3>Contact</h3>
           </Link>
         </div>
+
         <div className='box'>
           <Switch>
             <Route path='/about/history' component={History}/>
-            <Route path='/about/contact' component={Contact}></Route>
+            <Route path='/about/contact' component={Contact}/>
             <Route exact path='/about' render={() => (
                 <div>
                   <h1>About the University</h1>
@@ -42,11 +43,11 @@ export default class About extends Component {
                     dignissim eros consectetur nec.
                   </p>
                 </div>
-              )}>
-              </Route>
-          <Switch/>
+              )}
+            />
+          </Switch>
         </div>
       </div>
-    )
+    );
   }
 }
